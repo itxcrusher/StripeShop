@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | An E-Commerce Store</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/shop.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/cart.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <!-- Head Section -->
+        <header>
+            <!-- Gradient Background -->
+            <canvas id="stripe"></canvas>
+      
+            <!-- Navbar -->
+              <nav class="navbar navbar-expand-lg sticky-top navbar-light p-3 shadow-sm">
+                <div class="container px-5">
+                  <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-shop me-2 text-white"></i> <strong class="text-white">Shop</strong></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+                  <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+                  </div>
+                  <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                    
+                    <ul class="navbar-nav ms-auto fw-bolder">
+                      <li class="nav-item px-2">
+                        <a class="nav-link mx-2 active text-white" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link mx-2 text-white" href="products.html">Products</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link mx-2 text-white" href="../index.html#about">About</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link mx-2 text-white" href="../index.html#contact">Contact</a>
+                      </li>
+                    </ul>
+                    <div class="ms-auto d-none d-lg-block">
+                    </div>
+                  </div>
+                  <ul class="navbar-nav ms-auto fw-bolder">
+                    <li class="nav-item">
+                      <a class="nav-link mx-2 text-white" href="cart.html"><i class="fa-solid fa-cart-shopping me-1 text-white"></i> Cart</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link mx-2 text-white" href="#"><i class="fa-solid fa-circle-user me-1 text-white"></i> Account</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+      
+            <!-- Gradient Bottom -->
+            <div class="parallelogram"></div>
+        </header>
+      
+        <h1 id="main-heading" class="p-5 m-5 text-center text-white">Shopping Cart</h1>
+
+<!-- Cart -->
+<div class="container p-5 bg-lb rounded-5 border">
+  <div class="container p-4 mx-auto">
+
+    <!-- Head -->
+    <div class="row d-flex justify-content-center bg-db p-5 rounded-5 shadow">
+        <div class="col-5">
+            <h3 class="heading fw-bold text-white">Shopping Bag</h3>
+        </div>
+        <div class="col-7">
+            <div class="row text-right">
+                <div class="col-4">
+                    <h4 class="mt-2 fw-bold text-white">Format</h4>
+                </div>
+                <div class="col-4">
+                    <h4 class="mt-2 fw-bold text-white text-center">Quantity</h4>
+                </div>
+                <div class="col-4">
+                    <h4 class="mt-2 fw-bold text-white text-center">Price</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- First Item -->
+    <div class="row d-flex justify-content-center border-top">
+        <div class="col-5">
+            <div class="row d-flex">
+                <div class="book">
+                    <img src="https://i.imgur.com/2DsA49b.jpg" class="book-img">
+                </div>
+                <!-- <div class="my-auto flex-column d-flex pad-left">
+                    <h6 class="mob-text">Thinking, Fast and Slow</h6>
+                    <p class="mob-text">Daniel Kahneman</p>
+                </div> -->
+            </div>
+        </div>
+        <div class="my-auto col-7 px-5">
+            <div class="row text-right">
+                <div class="col-4">
+                    <p class="mob-text fw-bold">Digital</p>
+                </div>
+                <div class="col-4">
+                    <div class="row d-flex px-3">
+                        <p class="mb-0 text-center fw-bold" id="cnt1">1</p>
+                        <div class="plus-minus d-flex justify-content-between">
+                            <span class="vsm-text plus"><button class="btn btn-blue">+</button></span>
+                            <span class="vsm-text minus"><button class="btn btn-blue">-</button></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h6 class="mob-text fw-bold text-center">$9.99</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Item -->
+    <div class="row d-flex justify-content-center border-top">
+        <div class="col-5">
+            <div class="row d-flex">
+                <div class="book">
+                    <img src="https://i.imgur.com/Oj1iQUX.jpg" class="book-img">
+                </div>
+                <!-- <div class="my-auto flex-column d-flex pad-left">
+                    <h6 class="mob-text">Homo Deus: A Brief<br>History of Tomorrow</h6>
+                    <p class="mob-text">Yuval Noah Harari</p>
+                </div> -->
+            </div>
+        </div>
+        <div class="my-auto col-7">
+            <div class="row text-right">
+                <div class="col-4">
+                    <p class="mob-text fw-bold">Paperback</p>
+                </div>
+                <div class="col-4">
+                  <div class="row d-flex px-3">
+                      <p class="mb-0 text-center fw-bold" id="cnt1">1</p>
+                      <div class="plus-minus d-flex justify-content-between">
+                          <span class="vsm-text plus"><button class="btn btn-blue">+</button></span>
+                          <span class="vsm-text minus"><button class="btn btn-blue">-</button></span>
+                      </div>
+                  </div>
+              </div>
+                <div class="col-4">
+                    <h6 class="mob-text fw-bold text-center">$13.50</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Foot -->
+    <div class="row justify-content-center">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="row">
+                    <div class="col-lg-3 radio-group">
+                        <div class="row d-flex px-3 radio">
+                            <img class="pay img-fluid" src="https://i.imgur.com/WIAP9Ku.jpg">
+                            <p class="my-auto">Credit Card</p>
+                        </div>
+                        <div class="row d-flex px-3 radio gray">
+                            <img class="pay img-fluid" src="https://i.imgur.com/OdxcctP.jpg">
+                            <p class="my-auto">Debit Card</p>
+                        </div>
+                        <div class="row d-flex px-3 radio gray mb-3">
+                            <img class="pay img-fluid" src="https://i.imgur.com/cMk1MtK.jpg">
+                            <p class="my-auto">PayPal</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="row px-2">
+                            <div class="form-group col-md-6">
+                                <label class="form-control-label">Name on Card</label>
+                                <input type="text" id="cname" name="cname" placeholder="Johnny Doe">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="form-control-label">Card Number</label>
+                                <input type="text" id="cnum" name="cnum" placeholder="1111 2222 3333 4444">
+                            </div>
+                        </div>
+                        <div class="row px-2">
+                            <div class="form-group col-md-6">
+                                <label class="form-control-label">Expiration Date</label>
+                                <input type="text" id="exp" name="exp" placeholder="MM/YYYY">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label class="form-control-label">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="***">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-2">
+                        <div class="row d-flex justify-content-between px-4">
+                            <p class="mb-1 text-left">Subtotal</p>
+                            <h6 class="mb-1 text-right">$23.49</h6>
+                        </div>
+                        <div class="row d-flex justify-content-between px-4">
+                            <p class="mb-1 text-left">Shipping</p>
+                            <h6 class="mb-1 text-right">$2.99</h6>
+                        </div>
+                        <div class="row d-flex justify-content-between px-4" id="tax">
+                            <p class="mb-1 text-left">Total (tax included)</p>
+                            <h6 class="mb-1 text-right">$26.48</h6>
+                        </div>
+                        <button class="btn-block btn-blue">
+                            <span>
+                                <span id="checkout">Checkout</span> &nbsp; - &nbsp;
+                                <span id="check-amt">$26.48</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<br><br><br>
+ <!-- Footer -->
+ <div class="container-fluid bg-lb p-5"><br>
+    <div class="container footer">
+        <div class="row px-3">
+            <div class="col-sm-6 col-lg-4 f-t col-xl-3 py-3">
+                <h3 class="fw-c">Shop</h3>
+                <p><i class="fa-solid fa-location-dot f-i"></i>&nbsp United States</p>
+                <p><i class="fa-solid fa-comment f-i"></i>&nbsp English (United Kingdom)</p>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3">
+                <h6 class="fw-bolder">Products</h6>
+                <div class="f-t">
+                    <p>Atlas</p>
+                    <p>Billing</p>
+                    <p>Capital</p>
+                    <p>Checkout</p>
+                    <p>Climate</p>
+                    <p>Connect</p>
+                    <p>Corporate Card</p>
+                    <p>Data Pipeline</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3">
+                <h6 class="fw-bolder">About</h6>
+                <div class="f-t">
+                    <p>Atlas</p>
+                    <p>Billing</p>
+                    <p>Capital</p>
+                    <p>Checkout</p>
+                    <p>Climate</p>
+                    <p>Connect</p>
+                    <p>Corporate Card</p>
+                    <p>Data Pipeline</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3">
+                <h6 class="fw-bolder">Contact</h6>
+                <div class="f-t">
+                    <p>Atlas</p>
+                    <p>Billing</p>
+                    <p>Capital</p>
+                    <p>Checkout</p>
+                    <p>Climate</p>
+                    <p>Connect</p>
+                    <p>Corporate Card</p>
+                    <p>Data Pipeline</p>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col f-t">
+                <p>&#169; 2023 Shop, Inc.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Stripe JS -->
+	<script src="../js/stripe-gradient.js"></script>
+    <!-- External JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

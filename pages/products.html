@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | An E-Commerce Store</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/shop.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Head Section -->
+    <header>
+        <!-- Gradient Background -->
+        <canvas id="stripe"></canvas>
+
+        <!-- Navbar -->
+          <nav class="navbar navbar-expand-lg sticky-top navbar-light p-3 shadow-sm">
+            <div class="container px-5">
+              <a class="navbar-brand" href="../index.html"><i class="fa-solid fa-shop me-2 text-white"></i> <strong class="text-white">Shop</strong></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="mx-auto my-3 d-lg-none d-sm-block d-xs-block">
+              </div>
+              <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                
+                <ul class="navbar-nav ms-auto fw-bolder">
+                  <li class="nav-item px-2">
+                    <a class="nav-link mx-2 active text-white" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link mx-2 text-white" href="products.html">Products</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link mx-2 text-white" href="../index.html#about">About</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link mx-2 text-white" href="../index.html#contact">Contact</a>
+                  </li>
+                </ul>
+                <div class="ms-auto d-none d-lg-block">
+                </div>
+              </div>
+              <ul class="navbar-nav ms-auto fw-bolder">
+                <li class="nav-item">
+                  <a class="nav-link mx-2 text-white" href="cart.html"><i class="fa-solid fa-cart-shopping me-1 text-white"></i> Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2 text-white" href="#"><i class="fa-solid fa-circle-user me-1 text-white"></i> Account</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        <!-- Gradient Bottom -->
+        <div class="parallelogram"></div>
+    </header>
+
+    <!-- Landing Section -->
+    <main>
+        <div class="container p-5"><br><br><br><br><br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 id="main-heading" class="p-3">Shop the latest trends at our online store!</h1>
+                    <p class="px-3 text-secondary">Millions of businesses of all sizes - from startups to Fortune 500s - use stripe's software and APIs to accept payments, send payouts, and manage their businesses online.</p>
+                    <!-- <button type="button" class="btn btn-dark m-3 fw-bold rounded-5">Start now &nbsp<i class="fa-solid fa-angle-right"></i></button>
+                    <button type="button" class="btn btn-light fw-bold rounded-5">Contact sales &nbsp<i class="fa-solid fa-angle-right"></i></button> -->
+                </div>
+                <!-- <div class="col-1"></div> -->
+                <div class="col-lg-6 pt-3">
+                    <img src="../img/shop2.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+<br>
+    <!-- Popular Products Section -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <h1 class="font-weight-bold mb-2 fw-bold text-center">Popular Products</h1>
+                <p class="font-italic text-muted mb-4 text-center p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            
+                <div class="row pb-5 mb-4">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <!-- Card-->
+                        <div class="card rounded shadow-sm border-0">
+                        <div class="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+                            <h5> <a href="#one" class="text-dark fs-5">Awesome product</a></h5>
+                            <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <ul class="list-inline small">
+                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <!-- Card-->
+                        <div class="card rounded shadow-sm border-0">
+                        <div class="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-2_g4qame.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+                            <h5> <a href="#two" class="text-dark fs-5">Awesome product</a></h5>
+                            <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <ul class="list-inline small">
+                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <!-- Card-->
+                        <div class="card rounded shadow-sm border-0">
+                        <div class="card-body p-4"><img src="https://bootstrapious.com/i/snippets/sn-cards/shoes-4_vgfjy9.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+                            <h5> <a href="#three" class="text-dark fs-5">Awesome product</a></h5>
+                            <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <ul class="list-inline small">
+                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
+                            <li class="list-inline-item m-0"><i class="fa fa-star-o text-success"></i></li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- All Products Section -->
+    <div class="container all-products">
+
+        <div id="content" class="my-5">
+
+            <h1 class="font-weight-bold mb-2 fw-bold text-center">All Products</h1>
+        <p class="font-italic text-muted mb-4 text-center p-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+            
+        <!-- sidebar -->
+          <div id="filterbar" class="collapse">
+
+            <!-- First Box -->
+            <div class="box border-bottom">
+              <div class="form-group text-center pt-3 pb-4">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-success form-check-label">
+                    <input class="form-check-input" type="radio" /> Reset
+                  </label>
+                  <label class="btn btn-success form-check-label active">
+                    <input class="form-check-input" type="radio" checked /> Apply
+                  </label>
+                </div>
+              </div>
+              <div>
+                <label class="tick"
+                  >New <input type="checkbox" checked="checked" />
+                  <span class="check"></span>
+                </label>
+              </div>
+              <div>
+                <label class="tick"
+                  >Sale <input type="checkbox" /> <span class="check"></span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Second Box -->
+            <div class="box border-bottom">
+              <div class="box-label text-uppercase d-flex align-items-center">
+                Outerwear
+                <button
+                  class="btn ml-auto"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#inner-box"
+                  aria-expanded="false"
+                  aria-controls="inner-box"
+                  id="out"
+                  onclick="outerFilter()"
+                >
+                  <span class="fas fa-plus"></span>
+                </button>
+              </div>
+              <div id="inner-box" class="collapse mt-2 mr-1">
+                <div class="my-1">
+                  <label class="tick"
+                    >Windbreaker <input type="checkbox" checked="checked" />
+                    <span class="check"></span>
+                  </label>
+                </div>
+                <div class="my-1">
+                  <label class="tick"
+                    >Jumpsuit <input type="checkbox" />
+                    <span class="check"></span>
+                  </label>
+                </div>
+                <div class="my-1">
+                  <label class="tick"
+                    >Jacket <input type="checkbox" /> <span class="check"></span>
+                  </label>
+                </div>
+                <div class="my-1">
+                  <label class="tick"
+                    >Coat <input type="checkbox" /> <span class="check"></span>
+                  </label>
+                </div>
+                <div class="my-1">
+                  <label class="tick"
+                    >Raincoat <input type="checkbox" />
+                    <span class="check"></span>
+                  </label>
+                </div>
+                <div class="my-1">
+                  <label class="tick"
+                    >Handbag <input type="checkbox" checked />
+                    <span class="check"></span>
+                  </label>
+                </div>
+                <div class="my-1">
+                  <label class="tick"
+                    >Warm vest <input type="checkbox" />
+                    <span class="check"></span>
+                  </label>
+                </div>
+                <div class="my-1">
+                  <label class="tick"
+                    >Wallets <input type="checkbox" checked />
+                    <span class="check"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Box -->
+            <div class="box border-bottom">
+              <div class="box-label text-uppercase d-flex align-items-center">
+                season
+                <button
+                  class="btn ml-auto"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#inner-box2"
+                  aria-expanded="false"
+                  aria-controls="inner-box2"
+                >
+                  <span class="fas fa-plus"></span>
+                </button>
+              </div>
+              <div id="inner-box2" class="collapse mt-2 mr-1">
+                <div class="my-1">
+                  <label class="tick"
+                    >Spring <input type="checkbox" checked="checked" />
+                    <span class="check"></span>
+                  </label>
+                </div>
+                <div class="my-1">
+                  <label class="tick"
+                    >Summer <input type="checkbox" /> <span class="check"></span>
+                  </label>
+                </div>
+                <div class="my-1">
+                  <label class="tick"
+                    >Autumn <input type="checkbox" checked />
+                    <span class="check"></span>
+                  </label>
+                </div>
+                <div class="my-1">
+                  <label class="tick"
+                    >Winter <input type="checkbox" /> <span class="check"></span>
+                  </label>
+                </div>
+                <div class="my-1">
+                  <label class="tick"
+                    >Rainy <input type="checkbox" /> <span class="check"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fourth Box -->
+            <div class="box border-bottom">
+              <div class="box-label text-uppercase d-flex align-items-center">
+                price
+                <button
+                  class="btn ml-auto"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#price"
+                  aria-expanded="false"
+                  aria-controls="price"
+                >
+                  <span class="fas fa-plus"></span>
+                </button>
+              </div>
+              <div class="collapse" id="price">
+                <div class="middle">
+                  <div class="multi-range-slider">
+                    <input
+                      type="range"
+                      id="input-left"
+                      min="0"
+                      max="100"
+                      value="10"
+                    />
+                    <input
+                      type="range"
+                      id="input-right"
+                      min="0"
+                      max="100"
+                      value="50"
+                    />
+                    <div class="slider">
+                      <div class="track"></div>
+                      <div class="range"></div>
+                      <div class="thumb left"></div>
+                      <div class="thumb right"></div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-between mt-2"
+                >
+                  <div>
+                    <span id="amount-left" class="font-weight-bold"></span> $
+                  </div>
+                  <div>
+                    <span id="amount-right" class="font-weight-bold"></span> $
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fifth Box -->
+            <div class="box">
+              <div class="box-label text-uppercase d-flex align-items-center">
+                size
+                <button
+                  class="btn ml-auto"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#size"
+                  aria-expanded="false"
+                  aria-controls="size"
+                >
+                  <span class="fa-solid fa-plus"></span>
+                </button>
+              </div>
+              <div id="size" class="collapse">
+                <div
+                  class="btn-group d-flex align-items-center flex-wrap"
+                  data-toggle="buttons"
+                >
+                  <label class="btn btn-success form-check-label">
+                    <input class="form-check-input" type="checkbox" /> 80
+                  </label>
+                  <label class="btn btn-success form-check-label">
+                    <input class="form-check-input" type="checkbox" checked /> 92
+                  </label>
+                  <label class="btn btn-success form-check-label">
+                    <input class="form-check-input" type="checkbox" checked /> 102
+                  </label>
+                  <label class="btn btn-success form-check-label">
+                    <input class="form-check-input" type="checkbox" checked /> 104
+                  </label>
+                  <label class="btn btn-success form-check-label">
+                    <input class="form-check-input" type="checkbox" checked /> 106
+                  </label>
+                  <label class="btn btn-success form-check-label">
+                    <input class="form-check-input" type="checkbox" checked /> 108
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- products -->
+          <div id="products">
+            <div class="row mx-0">
+
+                <!-- Jeans -->
+              <div class="col-lg-4 col-md-6">
+                <a href="product.html" target="_blank">
+                <div class="card d-flex flex-column align-items-center">
+
+                  <div class="product-name">Torn Jeans for Men</div>
+
+                  <div class="card-img">
+                    <img
+                      src="https://www.freepnglogos.com/uploads/jeans-png/jeans-mens-pants-cliparts-download-clip-art-37.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="card-body pt-5">
+                    <div class="text-muted text-center mt-auto">
+                      Available Colors
+                    </div>
+                    <!-- colors -->
+                    <div
+                      class="d-flex align-items-center justify-content-center colors my-2"
+                    >
+                      <div
+                        class="btn-group"
+                        data-toggle="buttons"
+                        data-tooltip="tooltip"
+                        data-placement="right"
+                        title="choose color"
+                      >
+                        <label class="btn btn-red form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-blue form-check-label active">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-green form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-orange form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-pink form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="price">
+                      <div class="font-weight-bold"><p class="text-center">$45</p></div>
+                    </div>
+
+                  </div>
+
+                </div></a>
+              </div>
+
+              <!-- Tshirt -->
+              <div class="col-lg-4 col-md-6 pt-md-0 pt-3">
+                <a href="product.html" target="_blank">
+                <div class="card d-flex flex-column align-items-center">
+
+                  <div class="product-name">Nike Tshirts for Men</div>
+                  <div class="card-img">
+                    <img
+                      src="https://www.freepnglogos.com/uploads/t-shirt-png/t-shirt-png-printed-shirts-south-africa-20.png"
+                      alt=""
+                      height="100"
+                      id="shirt"
+                    />
+                  </div>
+                  
+                  <div class="card-body pt-5">
+                    <div class="text-muted text-center mt-auto">
+                      Available Colors
+                    </div>
+                    <!-- colors -->
+                    <div
+                      class="d-flex align-items-center justify-content-center colors my-2"
+                    >
+                      <div
+                        class="btn-group"
+                        data-toggle="buttons"
+                        data-tooltip="tooltip"
+                        data-placement="right"
+                        title="choose color"
+                      >
+                        <label class="btn btn-light border form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-blue form-check-label active">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-green form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-orange form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-pink form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="price">
+                      <div class="font-weight-bold"><p class="text-center">$45</p></div>
+                    </div>
+
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- Belts -->
+              <div class="col-lg-4 col-md-6 pt-lg-0 pt-md-4 pt-3">
+                <a href="product.html" target="_blank">
+                <div class="card d-flex flex-column align-items-center">
+                  <div class="product-name text-center">
+                    Casual Dress Belts For Men
+                  </div>
+                  <div class="card-img">
+                    <img
+                      src="https://www.freepnglogos.com/uploads/belts-png/casual-dress-belts-for-men-28.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body pt-5">
+                    <div class="text-muted text-center mt-auto">
+                      Available Colors
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center colors my-2"
+                    >
+                      <div
+                        class="btn-group"
+                        data-toggle="buttons"
+                        data-tooltip="tooltip"
+                        data-placement="right"
+                        title="choose color"
+                      >
+                        <label class="btn btn-dark border form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-brown form-check-label active">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center price"
+                    >
+                      <div class="font-weight-bold">$5</div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              </div>
+
+              <!-- Footwear -->
+              <div class="col-lg-4 col-md-6 pt-md-4 pt-3">
+                <a href="product.html" target="_blank">
+                <div class="card d-flex flex-column align-items-center">
+                  <div class="product-name text-center">Footwear For Women</div>
+                  <div class="card-img">
+                    <img
+                      src="https://www.freepnglogos.com/uploads/women-shoes-png/download-women-shoes-png-image-png-image-pngimg-2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body pt-5">
+                    <div class="text-muted text-center mt-auto">
+                      Available Colors
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center colors my-2"
+                    >
+                      <div
+                        class="btn-group"
+                        data-toggle="buttons"
+                        data-tooltip="tooltip"
+                        data-placement="right"
+                        title="choose color"
+                      >
+                        <label class="btn btn-dark border form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-brown form-check-label active">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-pink form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-red form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center price"
+                    >
+                      <div class="font-weight-bold">$15</div>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- Shoes -->
+              <div class="col-lg-4 col-md-6 pt-md-4 pt-3">
+                <a href="product.html" target="_blank">
+                <div class="card d-flex flex-column align-items-center">
+                  <div class="product-name text-center">
+                    Nike Jogging shoes For Men
+                  </div>
+                  <div class="card-img">
+                    <img
+                      src="https://www.freepnglogos.com/uploads/shoes-png/find-your-perfect-running-shoes-26.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body pt-5">
+                    <div class="text-muted text-center mt-auto">
+                      Available Colors
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center colors my-2"
+                    >
+                      <div
+                        class="btn-group"
+                        data-toggle="buttons"
+                        data-tooltip="tooltip"
+                        data-placement="right"
+                        title="choose color"
+                      >
+                        <label class="btn btn-dark border form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-pink form-check-label active">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-blue form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-orange form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center price"
+                    >
+                      <div class="font-weight-bold">$12</div>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+              <!-- Wallets -->
+              <div class="col-lg-4 col-md-6 pt-md-4 pt-3">
+                <a href="product.html" target="_blank">
+                <div class="card d-flex flex-column align-items-center">
+                  <div class="product-name text-center">
+                    Leather Wallets For Men
+                  </div>
+                  <div class="card-img">
+                    <img
+                      src="https://www.freepnglogos.com/uploads/money-png/money-wallet-dollar-image-money-pictures-download-27.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card-body pt-5">
+                    <div class="text-muted text-center mt-auto">
+                      Available Colors
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center colors my-2"
+                    >
+                      <div
+                        class="btn-group"
+                        data-toggle="buttons"
+                        data-tooltip="tooltip"
+                        data-placement="right"
+                        title="choose color"
+                      >
+                        <label class="btn btn-dark border form-check-label">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                        <label class="btn btn-brown form-check-label active">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            autocomplete="off"
+                          />
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex align-items-center justify-content-center price"
+                    >
+                      <div class="font-weight-bold">$9</div>
+                    </div>
+                  </div>
+                </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+            <div class="pagination_rounded">
+              <ul>
+                  <li><a href="#" class="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> Prev </a></li>
+                  <li><a href="#">1</a></li>
+                  <li class="hidden-xs"><a href="#">2</a></li>
+                  <li class="hidden-xs"><a href="#">3</a></li>
+                  <li><a href="#" class="next"> Next <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+              </ul>
+          </div>
+          <hr><br><br>
+        
+      </div>
+
+    <!-- First Light Section -->
+    <div class="container-fluid bg-lb">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <section id="one" class="light">
+                        <div class="container py-2">
+                            <div class="h1 text-center text-dark fw-bold" id="pageHeaderTitle">Products Category 1</div>
+                    
+                            <article class="postcard light blue">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="Image Title" />
+                                </a>
+                                <div class="postcard__text t-dark">
+                                    <h1 class="postcard__title blue"><a class="fs-3" href="#">Product Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="postcard light red">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="Image Title" />	
+                                </a>
+                                <div class="postcard__text t-dark">
+                                    <h1 class="postcard__title red"><a class="fs-3" href="#">Product Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="postcard light green">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="Image Title" />
+                                </a>
+                                <div class="postcard__text t-dark">
+                                    <h1 class="postcard__title green"><a class="fs-3" href="#">Product Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="postcard light yellow">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-1_gthops.jpg" alt="Image Title" />
+                                </a>
+                                <div class="postcard__text t-dark">
+                                    <h1 class="postcard__title yellow"><a class="fs-3" href="#">Product Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dark Section -->
+    <div class="container-fluid bg-db">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <section id="two" class="dark">
+                        <div class="container py-4">
+                            <h1 class="h1 text-center text-white" id="pageHeaderTitle">Products Category 2</h1>
+                    
+                            <article class="postcard dark blue">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-2_g4qame.jpg" alt="Image Title" />
+                                </a>
+                                <div class="postcard__text">
+                                    <h1 class="postcard__title blue"><a class="fs-3" href="#">Podcast Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="postcard dark red">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-2_g4qame.jpg" alt="Image Title" />	
+                                </a>
+                                <div class="postcard__text">
+                                    <h1 class="postcard__title red"><a class="fs-3" href="#">Podcast Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="postcard dark green">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-2_g4qame.jpg" alt="Image Title" />
+                                </a>
+                                <div class="postcard__text">
+                                    <h1 class="postcard__title green"><a class="fs-3" href="#">Podcast Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="postcard dark yellow">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-2_g4qame.jpg" alt="Image Title" />
+                                </a>
+                                <div class="postcard__text">
+                                    <h1 class="postcard__title yellow"><a class="fs-3" href="#">Podcast Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Light Section -->
+    <div class="container-fluid bg-lb">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <section id="three" class="light">
+                        <div class="container py-2">
+                            <div class="h1 text-center text-dark fw-bold" id="pageHeaderTitle">Products Category 3</div>
+                    
+                            <article class="postcard light blue">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-4_vgfjy9.jpg" alt="Image Title" />
+                                </a>
+                                <div class="postcard__text t-dark">
+                                    <h1 class="postcard__title blue"><a class="fs-3" href="#">Product Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="postcard light red">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-4_vgfjy9.jpg" alt="Image Title" />	
+                                </a>
+                                <div class="postcard__text t-dark">
+                                    <h1 class="postcard__title red"><a class="fs-3" href="#">Product Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="postcard light green">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-4_vgfjy9.jpg" alt="Image Title" />
+                                </a>
+                                <div class="postcard__text t-dark">
+                                    <h1 class="postcard__title green"><a class="fs-3" href="#">Product Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                            <article class="postcard light yellow">
+                                <a class="postcard__img_link" href="#">
+                                    <img class="postcard__img" src="https://bootstrapious.com/i/snippets/sn-cards/shoes-4_vgfjy9.jpg" alt="Image Title" />
+                                </a>
+                                <div class="postcard__text t-dark">
+                                    <h1 class="postcard__title yellow"><a class="fs-3" href="#">Products Title</a></h1>
+                                    <br>
+                                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis enim quidem excepturi, illum quos!</div>
+                                    <ul class="postcard__tagbox">
+                                      <a href="product.html" target="_blank"><button class="btn btn-dark m-3 fw-bold rounded-5"><i class="fas fa-play mr-2"></i> &nbsp Check Details</button></a>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Footer -->
+    <div class="container-fluid bg-lb p-5"><br>
+        <div class="container footer">
+            <div class="row px-3">
+                <div class="col-sm-6 col-lg-4 f-t col-xl-3 py-3">
+                    <h3 class="fw-c">Shop</h3>
+                    <p><i class="fa-solid fa-location-dot f-i"></i>&nbsp United States</p>
+                    <p><i class="fa-solid fa-comment f-i"></i>&nbsp English (United Kingdom)</p>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 py-3">
+                    <h6 class="fw-bolder">Products</h6>
+                    <div class="f-t">
+                        <p>Atlas</p>
+                        <p>Billing</p>
+                        <p>Capital</p>
+                        <p>Checkout</p>
+                        <p>Climate</p>
+                        <p>Connect</p>
+                        <p>Corporate Card</p>
+                        <p>Data Pipeline</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 py-3">
+                    <h6 class="fw-bolder">About</h6>
+                    <div class="f-t">
+                        <p>Atlas</p>
+                        <p>Billing</p>
+                        <p>Capital</p>
+                        <p>Checkout</p>
+                        <p>Climate</p>
+                        <p>Connect</p>
+                        <p>Corporate Card</p>
+                        <p>Data Pipeline</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3 py-3">
+                    <h6 class="fw-bolder">Contact</h6>
+                    <div class="f-t">
+                        <p>Atlas</p>
+                        <p>Billing</p>
+                        <p>Capital</p>
+                        <p>Checkout</p>
+                        <p>Climate</p>
+                        <p>Connect</p>
+                        <p>Corporate Card</p>
+                        <p>Data Pipeline</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col f-t">
+                    <p>&#169; 2023 Shop, Inc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Stripe JS -->
+	<script src="../js/stripe-gradient.js"></script>
+    <!-- External JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
